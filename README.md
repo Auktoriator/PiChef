@@ -1,5 +1,9 @@
 # PiChef
 
+[![Tests](https://github.com/Auktoriator/PiChef/actions/workflows/test.yml/badge.svg)](https://github.com/Auktoriator/PiChef/actions/workflows/test.yml)
+[![Release](https://img.shields.io/github/v/release/Auktoriator/PiChef)](https://github.com/Auktoriator/PiChef/releases)
+[![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-blue)](LICENSE)
+
 *A small German-language kitchen app for your Raspberry Pi: recipes, pantry, shopping list and a cooking mode,
 made for the phone. No account, no cloud. An old Kindle can serve as an optional kitchen display.*
 
@@ -65,7 +69,8 @@ Die ersten Schritte in der App:
 3. Das erste Rezept anlegen: Wunsch eintippen, „Prompt kopieren“, in Claude oder ChatGPT einfügen, die Antwort
    zurück in die App.
 
-Auf den neuesten Stand bringst du die App mit `git pull` und `docker compose up -d --build`.
+Docker lädt dabei ein fertiges Image für deinen Pi, gebaut wird nichts. Auf den neuesten Stand bringst du die App mit
+`git pull`, `docker compose pull` und `docker compose up -d`. Was sich geändert hat, steht in [CHANGELOG.md](CHANGELOG.md).
 
 ### Erst nur ansehen
 

@@ -2,7 +2,8 @@
 # Danach im Heimnetz: http://<Adresse des Pi>:8094/
 services:
   kueche:
-    build: .
+    # Fertiges Image aus GitHub Actions, :1 bekommt alle Updates der Version 1.x. Selbst bauen: siehe TECHNIK.md
+    image: ghcr.io/auktoriator/pichef:1
     restart: unless-stopped
     # Achtung: Docker oeffnet diesen Port an einer Firewall wie ufw vorbei. Die App hat keinen Login und gehoert
     # nur ins Heimnetz. Im Router keine Portweiterleitung darauf einrichten.

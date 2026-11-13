@@ -1,0 +1,60 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  app:
+    name: App (Python 3.13)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Schrift wie im Container
+        run: sudo apt-get install -y --no-install-recommends fonts-dejavu-core
+      - run: pip install -r requirements.txt
+      - run: python dashboard/test_dash.py
+      - run: python rezepte/test_rezepte.py
+
+  kindle:
+    name: Kindle-Skripte (busybox)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Ablauf unter busybox wie auf dem Kindle
+        run: |
+          for f in kindle/kuechendash/*.sh kindle/documents/*.sh kindle/test/szenario.sh; do sh -n "$f"; done
+          t=$(mktemp -d) && mkdir "$t/ext"
+          cp -r kindle/test/stubs kindle/test/szenario.sh "$t/"
+          cp kindle/kuechendash/dash.sh kindle/kuechendash/rezeptbuch.sh kindle/documents/Rezepte.sh "$t/ext/"
+          echo SERVER=http://stub > "$t/ext/einstellungen.sh"
+          docker run --rm -v "$t:/t" busybox:1.37 sh /t/szenario.sh 2>&1 | tee ausgabe.txt
+          ! grep -E "not found|syntax error|can't open|Segmentation" ausgabe.txt
+
+  image:
+    name: Container startet
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: docker build -t pichef:test .
+      - name: Antwortet der Server?
+        run: |
+          docker run -d --name pichef -e PORT=8094 -p 127.0.0.1:8094:8094 pichef:test
+          for i in $(seq 1 15); do curl -fsS -o /dev/null http://127.0.0.1:8094/schlaf && break; sleep 1; done
+          curl -fsS -o /dev/null http://127.0.0.1:8094/ && curl -fsS -o /dev/null http://127.0.0.1:8094/rezepte
+          docker logs pichef

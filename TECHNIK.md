@@ -15,6 +15,8 @@ Für alle, die hineinsehen oder etwas ändern wollen. Bedienung und Start: [READ
 | `demo/` | Beispieldaten zum Ansehen |
 | `kindle/` | Skripte für den Kindle, siehe [kindle/README.md](kindle/README.md) |
 | `Dockerfile`, `compose.yaml` | Der Container. Er kopiert die Dateien flach nach `/app`. Neue Dateien im `Dockerfile` eintragen |
+| `requirements.txt` | Die einzige Abhängigkeit (Pillow), für Container, Tests und CI |
+| `.github/` | Tests bei jedem Push, Images bei jedem Release, Dependabot |
 
 Die Seiten sind fertiges HTML vom Server. Ohne JavaScript geht fast alles, mit geht es ohne Neuladen.
 
@@ -81,14 +83,29 @@ Eine Sicherheitslücke bitte nicht als öffentliches Issue melden, sondern über
 
 ## Tests
 
-Beide laufen ohne Netz und ohne Docker, mit Python 3.13 oder neuer und Pillow:
+Beide laufen ohne Netz und ohne Docker, mit Python 3.13 oder neuer:
 
 ```bash
-python3 dashboard/test_dash.py
-python3 rezepte/test_rezepte.py
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python dashboard/test_dash.py
+.venv/bin/python rezepte/test_rezepte.py
 ```
 
 Der Container nutzt Python 3.13. Wer am eigenen Rechner ein neueres Python hat, nutzt nur, was 3.13 kann.
+GitHub Actions führt bei jedem Push und Pull Request diese Tests aus, dazu die Kindle-Skripte unter busybox und einen
+Start des Containers (`.github/workflows/test.yml`).
+
+## Versionen und Images
+
+Ein Tag `vX.Y.Z` startet `.github/workflows/release.yml`: Tests, dann ein Image für arm64 und amd64 nach
+`ghcr.io/auktoriator/pichef` mit den Tags `X.Y.Z`, `X.Y`, `X` und `latest`, samt Herkunftsnachweis. Prüfen:
+
+```bash
+gh attestation verify oci://ghcr.io/auktoriator/pichef:1 --repo Auktoriator/PiChef
+```
+
+Selbst bauen statt laden: in `compose.yaml` die Zeile `image:` durch `build: .` ersetzen, dann
+`docker compose up -d --build`.
 
 ## Bekannte Grenzen
 
