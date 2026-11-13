@@ -1,15 +1,26 @@
 # Updates als Pull Request: Python-Pakete, das Basis-Image (per Digest festgelegt) und die GitHub Actions
 version: 2
+# Neue Versionen erst nach 14 Tagen vorschlagen: Zeit, falls eine Version zurueckgezogen wird
 updates:
   - package-ecosystem: pip
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 14
   - package-ecosystem: docker
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 14
+    ignore:
+      # Python bleibt bei 3.13 (Tests und Code sind darauf ausgelegt); Sicherheits-Updates kommen ueber den Digest
+      - dependency-name: python
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 14
