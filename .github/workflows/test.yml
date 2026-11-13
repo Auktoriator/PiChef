@@ -42,7 +42,9 @@ jobs:
           cp kindle/kuechendash/dash.sh kindle/kuechendash/rezeptbuch.sh kindle/documents/Rezepte.sh "$t/ext/"
           echo SERVER=http://stub > "$t/ext/einstellungen.sh"
           docker run --rm -v "$t:/t" busybox:1.37 sh /t/szenario.sh 2>&1 | tee ausgabe.txt
-          ! grep -E "not found|syntax error|can't open|Segmentation" ausgabe.txt
+          # Ausgenommen: ein Prozess endet zwischen Auflisten und Lesen seiner /proc/N/cmdline (harmloser Wettlauf in
+          # unsere_prozesse(), dash.sh; ash meldet die Umleitung trotz 2>/dev/null)
+          ! grep -v -E "can't open /proc/[0-9]+/cmdline" ausgabe.txt | grep -E "not found|syntax error|can't open|Segmentation"
 
   image:
     name: Container startet
