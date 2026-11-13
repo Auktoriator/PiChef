@@ -1,0 +1,5 @@
+# In den Build-Kontext kommen nur die beiden Code-Ordner, daten/ bleibt draussen.
+# Was ins Image kommt, steht nur im Dockerfile (COPY).
+*
+!dashboard/
+!rezepte/

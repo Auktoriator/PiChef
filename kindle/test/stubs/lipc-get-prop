@@ -1,0 +1,2 @@
+#!/bin/sh
+case "$2" in state) cat /t/state;; cmState) cat /t/wlan;; battLevel) echo 77;; wirelessEnable) cat /t/funk;; esac

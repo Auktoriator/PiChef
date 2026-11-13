@@ -1,0 +1,11 @@
+#!/bin/sh
+# Bild oder Rezeptbuch nach -o, sonst Schlafsekunden; /t/rezeptbuch steuert die Antwort fuer das EPUB,
+# „weg“ auch fuer die Kindle-Seite (Server nicht erreichbar)
+o=; vor=; for a; do [ "$vor" = -o ] && o=$a; vor=$a; done
+case "$a" in
+  *rezeptbuch.epub) case "$(cat /t/rezeptbuch 2>/dev/null)" in weg) exit 7;; html) inhalt='<html>Portal';; *) inhalt='PK epub';; esac ;;
+  */kindle) [ "$(cat /t/rezeptbuch 2>/dev/null)" = weg ] && exit 7; inhalt=seite ;;
+  *) inhalt=bild ;;
+esac
+[ -n "$o" ] && { echo "$inhalt" > "$o"; exit 0; }
+echo 1800

@@ -1,0 +1,28 @@
+# Startet die App auf einem Raspberry Pi (oder jedem Rechner mit Docker): docker compose up -d
+# Danach im Heimnetz: http://<Adresse des Pi>:8094/
+services:
+  kueche:
+    build: .
+    restart: unless-stopped
+    # Achtung: Docker oeffnet diesen Port an einer Firewall wie ufw vorbei. Die App hat keinen Login und gehoert
+    # nur ins Heimnetz. Im Router keine Portweiterleitung darauf einrichten.
+    ports:
+      - "8094:8094"
+    user: "1000:1000"   # der erste Benutzer auf dem Pi; ihm muss der Ordner daten/ gehoeren
+    read_only: true     # schreiben nur in /daten und /tmp
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      TZ: Europe/Berlin
+      PORT: "8094"
+      DATEN: /daten
+      # Unter diesen Namen darf die Seite aufgerufen werden, IP-Adressen gehen immer. Heisst dein Pi anders,
+      # hier eintragen, sonst antwortet die Seite unter dem Namen mit „403“.
+      NAMEN: "raspberrypi,raspberrypi.local,localhost"
+      # Nur fuer das Kindle-Bild: Ort und Koordinaten fuers Wetter (Open-Meteo). Ohne Kindle egal.
+      ORT: Berlin
+      LAT: "52.52"
+      LON: "13.405"
+    volumes:
+      - ./daten:/daten

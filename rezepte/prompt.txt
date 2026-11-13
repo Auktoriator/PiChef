@@ -1,0 +1,41 @@
+Schreib mir ein Rezept für folgenden Wunsch:
+
+WUNSCH: <hier eintragen, z. B. „schnelle Pasta für 2, Zucchini muss weg“>
+ANZAHL: <so viele Rezepte>
+MAHLZEIT: <Mittagessen, Abendessen oder beides>
+ZEIT: <höchstens so viele Minuten>
+PORTIONEN: <Zahl>
+ZUTATEN: <nur was da ist, alle Artikel aus dem Vorrat oder frei>
+
+Gib das Rezept NUR als einen einzigen Markdown-Codeblock aus, ohne Text davor oder danach, genau in diesem Format:
+
+# <Titel, höchstens 40 Zeichen>
+Mahlzeit: <Mittagessen, Abendessen oder beides>
+Portionen: <Zahl>
+Zeit: <Minuten> min
+Nährwerte pro Portion: <Zahl> kcal, <Zahl> g Eiweiß, <Zahl> g Fett, <Zahl> g Kohlenhydrate
+Tags: <2–4 Stichworte mit Komma, z. B. vegetarisch, schnell>
+
+## Zutaten
+- <Menge> <Einheit> <Zutat>
+
+## Zubereitung
+1. <Schritt>
+
+## Tipp
+<ein Satz; Abschnitt weglassen, wenn es keinen gibt>
+
+Regeln:
+- Deutsch, metrische Einheiten (g, ml, EL, TL, Stück), Temperaturen in °C mit Ober-/Unterhitze oder Umluft.
+- Höchstens 12 Zutaten und 8 Schritte, jeder Schritt höchstens zwei kurze Sätze.
+- Zutaten schlicht benennen, z. B. „Zucchini“ statt „kleine grüne Zucchini“; Zustand wie „gehackt“ nach einem Komma.
+- Zeiten und Temperaturen direkt in die Schritte schreiben.
+- Tags: Nimm, wenn es passt, aus dieser Liste: vegetarisch, vegan, schnell, proteinreich, Meal-Prep, Ofengericht, One-Pot. Eigene nur, wenn keins passt.
+- Nährwerte pro Portion aus den Zutatenmengen schätzen, auf ganze Zahlen gerundet.
+- MAHLZEIT, ZEIT und PORTIONEN von oben übernehmen. Steht dort noch ein Platzhalter in spitzen Klammern, wähle, was besser passt.
+- Stehen oben VORLIEBEN, halte dich daran.
+- Steht bei ZUTATEN eine Liste, nimm nur Zutaten daraus und schreib sie so, wie sie dort heißen. Salz, Pfeffer und Wasser sind immer da. Steht oben EINKAUFEN, gilt das zusätzlich. Steht bei ZUTATEN „frei“ oder ein Platzhalter, nimm, was passt.
+- Steht bei ANZAHL keine Zahl, schreib genau ein Rezept. Bei mehreren: unterschiedliche Hauptzutaten und Zubereitungsarten, alle hintereinander im selben Codeblock, jedes beginnt mit seiner eigenen Zeile „# Titel“. MAHLZEIT, ZEIT und PORTIONEN gelten für jedes.
+- Stehen oben unter VORHANDEN Rezepte, schlage keins davon noch einmal vor.
+- Keine Emojis, keine Fettschrift, keine Links.
+- Wenn ich statt eines Wunsches ein fertiges Rezept einfüge (Text, Foto, Link-Inhalt), wandle es in dieses Format um.

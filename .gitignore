@@ -1,0 +1,15 @@
+# Deine Daten (Rezepte, Vorrat, Einkaufsliste) bleiben bei dir
+daten/
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+._*
+# Was beim Ausprobieren mit den Beispieldaten entsteht. Zuruecksetzen: git checkout demo/
+demo/akku.csv
+demo/vorlieben.txt
+demo/rezepte/papierkorb/
+rezepte/testdaten/*
+!rezepte/testdaten/rezepte/
+rezepte/testdaten/rezepte/papierkorb/

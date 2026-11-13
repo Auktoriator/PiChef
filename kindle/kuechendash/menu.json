@@ -1,0 +1,37 @@
+{
+	"items": [
+	{
+		"name": "Kuechen-Dashboard",
+		"priority": 0,
+		"items": [
+		{
+			"name": "Dashboard an",
+			"priority": 1,
+			"action": "/bin/sh",
+			"params": "/mnt/us/extensions/kuechendash/dash.sh start",
+			"exitmenu": false,
+			"status": false,
+			"internal": "status Dashboard startet"
+		},
+		{
+			"name": "Dashboard aus",
+			"priority": 2,
+			"action": "/bin/sh",
+			"params": "/mnt/us/extensions/kuechendash/dash.sh stop",
+			"exitmenu": false,
+			"status": false,
+			"internal": "status Dashboard stoppt"
+		},
+		{
+			"name": "Rezeptbuch holen",
+			"priority": 3,
+			"action": "/bin/sh",
+			"params": "/mnt/us/extensions/kuechendash/rezeptbuch.sh",
+			"exitmenu": false,
+			"status": false,
+			"internal": "status Rezeptbuch wird geholt"
+		}
+		]
+	}
+	]
+}

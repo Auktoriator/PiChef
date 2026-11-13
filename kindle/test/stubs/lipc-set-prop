@@ -1,0 +1,7 @@
+#!/bin/sh
+# /t/wlan-dauer: so viele Sekunden braucht das WLAN nach dem Einschalten (Standard sofort)
+echo "$*" >> /t/set.calls
+case "$3" in wirelessEnable) echo "$4" > /t/funk
+  [ "$4" = 1 ] && { sleep "$(cat /t/wlan-dauer 2>/dev/null || echo 0)"; echo CONNECTED > /t/wlan; } </dev/null >/dev/null 2>&1 &
+  ;;
+esac

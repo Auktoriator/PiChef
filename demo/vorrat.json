@@ -1,0 +1,1397 @@
+{
+ "artikel": {
+  "suesskartoffeln": {
+   "name": "Süßkartoffeln",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "kartoffeln-vorwiegend-festkochend": {
+   "name": "vorwiegend festkochend",
+   "ober": "Kartoffeln",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "paprika": {
+   "name": "Paprika",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "zucchini": {
+   "name": "Zucchini",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "karotten": {
+   "name": "Karotten",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Karotte",
+    "Möhren"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "gurke": {
+   "name": "Gurke",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "tomaten": {
+   "name": "Tomaten",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Tomate"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "avocado": {
+   "name": "Avocado",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "blattsalat": {
+   "name": "Blattsalat",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Salatmix",
+    "Salat"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "zwiebeln": {
+   "name": "Zwiebeln",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Zwiebel"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "knoblauch": {
+   "name": "Knoblauch",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "zitronen": {
+   "name": "Zitronen",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [
+    "Zitrone"
+   ],
+   "basis": false,
+   "liste": "auto"
+  },
+  "limetten": {
+   "name": "Limetten",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Limette"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "ingwer": {
+   "name": "Ingwer",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "fruehlingszwiebeln": {
+   "name": "Frühlingszwiebeln",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "champignons": {
+   "name": "Champignons",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [
+    "Pilze"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "aepfel": {
+   "name": "Äpfel",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "bananen": {
+   "name": "Bananen",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": "hand"
+  },
+  "koerniger-frischkaese": {
+   "name": "Körniger Frischkäse",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Hüttenkäse"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "skyr": {
+   "name": "Skyr",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "eier": {
+   "name": "Eier",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": true,
+   "mindestens": 4,
+   "stand": "da",
+   "anzahl": 2,
+   "auch": [],
+   "basis": false,
+   "liste": "auto"
+  },
+  "feta": {
+   "name": "Feta",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "mozzarella": {
+   "name": "Mozzarella",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "butter": {
+   "name": "Butter",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "mandelmilch": {
+   "name": "Mandelmilch",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "hummus": {
+   "name": "Hummus",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Humus"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "huehnchen": {
+   "name": "Hühnchen",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Hähnchen"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "rinderhackfleisch": {
+   "name": "Rinderhackfleisch",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Hackfleisch",
+    "Rinderhack"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "parmesan": {
+   "name": "Parmesan",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Parmigiano",
+    "Grana Padano"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "frischkaese": {
+   "name": "Frischkäse",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "naturjoghurt": {
+   "name": "Naturjoghurt",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "wenig",
+   "anzahl": 0,
+   "auch": [
+    "Joghurt"
+   ],
+   "basis": false,
+   "liste": "auto"
+  },
+  "sahne": {
+   "name": "Sahne",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "milch": {
+   "name": "Milch",
+   "ober": "",
+   "bereich": "Kühlschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "riesengarnelenschwaenze": {
+   "name": "Riesengarnelenschwänze",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Garnelen",
+    "Riesengarnelen"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "lachsfilet": {
+   "name": "Lachsfilet",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 1,
+   "auch": [
+    "Lachs"
+   ],
+   "basis": false,
+   "liste": "hand",
+   "fuer": "Lachs mit Brokkoli und Reis"
+  },
+  "buttergemuese": {
+   "name": "Buttergemüse",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "wildheidelbeeren": {
+   "name": "Wildheidelbeeren",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Heidelbeeren",
+    "Blaubeeren"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "brokkoli": {
+   "name": "Brokkoli",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "brokkolireis": {
+   "name": "Brokkolireis",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "edamame": {
+   "name": "Edamame",
+   "ober": "",
+   "bereich": "Tiefkühl",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "toast": {
+   "name": "Toast",
+   "ober": "",
+   "bereich": "Brot",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Toastbrot"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "wraps": {
+   "name": "Wraps",
+   "ober": "",
+   "bereich": "Brot",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Tortilla",
+    "Tortillas"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "spaghetti-weizen": {
+   "name": "Weizen",
+   "ober": "Spaghetti",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "spaghetti-dinkel": {
+   "name": "Dinkel",
+   "ober": "Spaghetti",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "spaghetti-vollkorn": {
+   "name": "Vollkorn",
+   "ober": "Spaghetti",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "spaghetti-edamame": {
+   "name": "Edamame",
+   "ober": "Spaghetti",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "puntine": {
+   "name": "Puntine",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Orzo",
+    "Kritharaki"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "reis-basmati": {
+   "name": "Basmati",
+   "ober": "Reis",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "reis-langkorn": {
+   "name": "Langkorn",
+   "ober": "Reis",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "quinoa-tricolore": {
+   "name": "Tricolore",
+   "ober": "Quinoa",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "rote-linsen": {
+   "name": "Rote Linsen",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "thunfisch": {
+   "name": "Thunfisch",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "mais": {
+   "name": "Mais",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "kidneybohnen": {
+   "name": "Kidneybohnen",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "kichererbsen": {
+   "name": "Kichererbsen",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "weisse-riesenbohnen": {
+   "name": "Weiße Riesenbohnen",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "kokosmilch": {
+   "name": "Kokosmilch",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "passierte-tomaten": {
+   "name": "Passierte Tomaten",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "pesto-pomodori-secchi": {
+   "name": "Pomodori secchi",
+   "ober": "Pesto",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "pesto-ricotta-e-noci": {
+   "name": "Ricotta e noci",
+   "ober": "Pesto",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "pesto-tartufo-mit-pilzen": {
+   "name": "Tartufo mit Pilzen",
+   "ober": "Pesto",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "pesto-tomate-mandel": {
+   "name": "Tomate-Mandel",
+   "ober": "Pesto",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "pesto-basilico-e-limone": {
+   "name": "Basilico e Limone",
+   "ober": "Pesto",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "mayo": {
+   "name": "Mayo",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Mayonnaise"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "ketchup": {
+   "name": "Ketchup",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "sonnenblumenkerne": {
+   "name": "Sonnenblumenkerne",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "sesam": {
+   "name": "Sesam",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "gehackte-tomaten": {
+   "name": "Gehackte Tomaten",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": true,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "stückige Tomaten"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "tomatenmark": {
+   "name": "Tomatenmark",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "haferflocken": {
+   "name": "Haferflocken",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "mehl": {
+   "name": "Mehl",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "zucker": {
+   "name": "Zucker",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "honig": {
+   "name": "Honig",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "senf": {
+   "name": "Senf",
+   "ober": "",
+   "bereich": "Vorratsschrank",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "salz": {
+   "name": "Salz",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": true,
+   "liste": ""
+  },
+  "pfeffer": {
+   "name": "Pfeffer",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": true,
+   "liste": ""
+  },
+  "paprikapulver-edelsuess": {
+   "name": "edelsüß",
+   "ober": "Paprikapulver",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "paprikapulver-geraeuchert": {
+   "name": "geräuchert",
+   "ober": "Paprikapulver",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "currypulver": {
+   "name": "Currypulver",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Curry"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "kurkuma": {
+   "name": "Kurkuma",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "kreuzkuemmel": {
+   "name": "Kreuzkümmel",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Cumin"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "chiliflocken": {
+   "name": "Chiliflocken",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Chili"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "oregano": {
+   "name": "Oregano",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "thymian": {
+   "name": "Thymian",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "rosmarin": {
+   "name": "Rosmarin",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "italienische-kraeuter": {
+   "name": "Italienische Kräuter",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "muskat": {
+   "name": "Muskat",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Muskatnuss"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "zimt": {
+   "name": "Zimt",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "knoblauchpulver": {
+   "name": "Knoblauchpulver",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "lorbeerblaetter": {
+   "name": "Lorbeerblätter",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Lorbeer"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "gemuesebruehe": {
+   "name": "Gemüsebrühe",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Brühe"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "garam-masala": {
+   "name": "Garam Masala",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "olivenoel": {
+   "name": "Olivenöl",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "wenig",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": "auto"
+  },
+  "rapsoel": {
+   "name": "Rapsöl",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Öl",
+    "Pflanzenöl"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "sesamoel": {
+   "name": "Sesamöl",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "balsamico": {
+   "name": "Balsamico",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "essig": {
+   "name": "Essig",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "sojasosse": {
+   "name": "Sojasoße",
+   "ober": "",
+   "bereich": "Gewürze & Öle",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [
+    "Sojasauce"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "klopapier": {
+   "name": "Klopapier",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 1,
+   "auch": [
+    "Toilettenpapier"
+   ],
+   "basis": false,
+   "liste": ""
+  },
+  "kuechenrolle": {
+   "name": "Küchenrolle",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "leer",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": "auto"
+  },
+  "spuelmittel": {
+   "name": "Spülmittel",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "wenig",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": "auto"
+  },
+  "spuelmaschinentabs": {
+   "name": "Spülmaschinentabs",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "waschmittel": {
+   "name": "Waschmittel",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "muellbeutel": {
+   "name": "Müllbeutel",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "backpapier": {
+   "name": "Backpapier",
+   "ober": "",
+   "bereich": "Haushalt",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "zahnpasta": {
+   "name": "Zahnpasta",
+   "ober": "",
+   "bereich": "Drogerie",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "duschgel": {
+   "name": "Duschgel",
+   "ober": "",
+   "bereich": "Drogerie",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "shampoo": {
+   "name": "Shampoo",
+   "ober": "",
+   "bereich": "Drogerie",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "deo": {
+   "name": "Deo",
+   "ober": "",
+   "bereich": "Drogerie",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  },
+  "petersilie": {
+   "name": "Petersilie",
+   "ober": "",
+   "bereich": "Obst & Gemüse",
+   "stueck": false,
+   "mindestens": 1,
+   "stand": "da",
+   "anzahl": 0,
+   "auch": [],
+   "basis": false,
+   "liste": ""
+  }
+ },
+ "einmalig": [
+  "Geburtstagskerzen"
+ ]
+}

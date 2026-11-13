@@ -1,0 +1,128 @@
+# Startkatalog: wird beim allerersten Start zum Katalog, danach nur noch in der App gepflegt.
+# Eine Zeile pro Artikel. „Oberbegriff: Sorte, Sorte“ legt Sorten an (jede Sorte zählt für Rezepte mit dem Oberbegriff).
+# Zusätze nach „|“: Stück (wird gezählt), mindestens N, Basis (zählt bei Rezepten immer als da), auch: Synonyme.
+# In jedem Bereich startet der obere Teil als „da“ (ein Grundstock), alles unter „# ergänzt“ als leer.
+# Vor dem ersten Start anpassen oder danach in der App unter „Vorrat“ einmal durchtippen.
+# Haushalt und Drogerie sind nicht essbar: nur Vorrat und Einkaufsliste, nie Rezepte.
+
+## Obst & Gemüse
+Süßkartoffeln
+Kartoffeln: vorwiegend festkochend
+Paprika
+Zucchini
+Karotten | auch: Karotte, Möhren
+Gurke
+Tomaten | auch: Tomate
+Avocado
+Blattsalat | auch: Salatmix, Salat
+# ergänzt
+Zwiebeln | auch: Zwiebel
+Knoblauch
+Zitronen | auch: Zitrone
+Limetten | auch: Limette
+Ingwer
+Frühlingszwiebeln
+Champignons | auch: Pilze
+Äpfel
+Bananen
+
+## Kühlschrank
+Körniger Frischkäse | auch: Hüttenkäse
+Skyr
+Eier | Stück, mindestens 4
+Feta
+Mozzarella
+Butter
+Mandelmilch | Stück
+Hummus | auch: Humus
+Hühnchen | auch: Hähnchen
+Rinderhackfleisch | auch: Hackfleisch, Rinderhack
+# ergänzt
+Parmesan | auch: Parmigiano, Grana Padano
+Frischkäse
+Naturjoghurt | auch: Joghurt
+Sahne
+Milch | Stück
+
+## Tiefkühl
+Riesengarnelenschwänze | auch: Garnelen, Riesengarnelen
+Lachsfilet | auch: Lachs
+Buttergemüse
+Wildheidelbeeren | auch: Heidelbeeren, Blaubeeren
+Brokkoli
+Brokkolireis
+Edamame
+
+## Brot
+Toast | auch: Toastbrot
+Wraps | auch: Tortilla, Tortillas
+
+## Vorratsschrank
+Spaghetti: Weizen, Dinkel, Vollkorn, Edamame
+Puntine | auch: Orzo, Kritharaki
+Reis: Basmati, Langkorn
+Quinoa: Tricolore
+Rote Linsen
+Thunfisch | Stück
+Mais | Stück
+Kidneybohnen | Stück
+Kichererbsen | Stück
+Weiße Riesenbohnen | Stück
+Kokosmilch | Stück
+Passierte Tomaten | Stück
+Pesto: Pomodori secchi, Ricotta e noci, Tartufo mit Pilzen, Tomate-Mandel, Basilico e Limone
+Mayo | auch: Mayonnaise
+Ketchup
+Sonnenblumenkerne
+Sesam
+# ergänzt
+Gehackte Tomaten | Stück, auch: stückige Tomaten
+Tomatenmark
+Haferflocken
+Mehl
+Zucker
+Honig
+Senf
+
+## Gewürze & Öle
+# ergänzt
+Salz | Basis
+Pfeffer | Basis
+Paprikapulver: edelsüß, geräuchert
+Currypulver | auch: Curry
+Kurkuma
+Kreuzkümmel | auch: Cumin
+Chiliflocken | auch: Chili
+Oregano
+Thymian
+Rosmarin
+Italienische Kräuter
+Muskat | auch: Muskatnuss
+Zimt
+Knoblauchpulver
+Lorbeerblätter | auch: Lorbeer
+Gemüsebrühe | auch: Brühe
+Garam Masala
+Olivenöl
+Rapsöl | auch: Öl, Pflanzenöl
+Sesamöl
+Balsamico
+Essig
+Sojasoße | auch: Sojasauce
+
+## Haushalt
+Klopapier | auch: Toilettenpapier
+# ergänzt
+Küchenrolle
+Spülmittel
+Spülmaschinentabs
+Waschmittel
+Müllbeutel
+Backpapier
+
+## Drogerie
+# ergänzt
+Zahnpasta
+Duschgel
+Shampoo
+Deo
