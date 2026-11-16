@@ -152,6 +152,11 @@ seite = hole("/rezepte")[1].decode()
 assert "Zucchini-Pasta" in seite and "vegetarisch" in seite and ">530</span> kcal" in seite and "E 19 g, F 16,5 g" in seite
 assert "Zucchini-Pasta" in hole("/rezepte?m=abend")[1].decode() and "Zucchini-Pasta" not in hole("/rezepte?m=mittag")[1].decode()
 assert "Zucchini-Pasta" in hole("/rezepte?m=quatsch")[1].decode()  # unbekannter Filter zeigt alle
+# Symbol: verlinkt auf den App-Seiten, nicht auf der schlanken Kindle-Seite; SVG und PNG 180x180 werden ausgeliefert
+assert 'href="/favicon.svg"' in seite and 'href="/apple-touch-icon.png"' in seite
+assert "favicon" not in hole("/kindle")[1].decode()
+assert hole("/favicon.svg")[1].startswith(b"<svg") and rezepte.get("/favicon.svg", {})[0] == "image/svg+xml"
+assert Image.open(io.BytesIO(hole("/apple-touch-icon.png")[1])).size == (180, 180)
 # Filter: alle Tags muessen passen (Gross/klein egal), Chips schalten sich ab, Reiter behalten die Filter, Suchtext je Zeile
 gefiltert = hole("/rezepte?t=Vegetarisch&t=schnell")[1].decode()
 assert "Zucchini-Pasta" in gefiltert and '<a href="/rezepte?t=schnell" aria-current="true">vegetarisch</a>' in gefiltert
