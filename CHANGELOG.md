@@ -3,6 +3,16 @@
 Versionen nach [Semantic Versioning](https://semver.org/lang/de/). Jede Version gibt es als fertiges Image:
 `ghcr.io/auktoriator/pichef:<Version>` (ab 1.1.0).
 
+## 1.2.0 – 2026-11-16
+
+### Neu
+- **Symbol der App:** Favicon im Browser-Tab (`/favicon.svg`) und Symbol für „Zum Home-Bildschirm“
+  (`/apple-touch-icon.png`, 180 × 180), ein Kochtopf in den Farben der App. Die Kindle-Seite bleibt ohne.
+- Issue-Vorlage für neue Aufgaben.
+
+### Geändert
+- `docker/login-action` 4.8.0 im Release-Workflow (Dependabot).
+
 ## 1.1.0 – 2026-11-13
 
 ### Neu
