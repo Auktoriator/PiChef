@@ -11,6 +11,7 @@ GET  /rezept?d=NAME      ein Rezept mit Heute kochen / Bearbeiten / Loeschen
 GET  /bearbeiten?d=NAME  Text aendern, mit Vorschau
 GET  /kochmodus?d=NAME&portionen=N&schritt=K  Schritt fuer Schritt kochen, Timer, Display bleibt an
 GET  /rezeptbuch.epub    alle Rezepte als EPUB fuer KOReader
+GET  /favicon.svg, /apple-touch-icon.png  Symbol der App fuer Browser-Tab und Home-Bildschirm
 GET  /kindle             Rezeptliste fuer den Browser des Kindle (nur im Heimnetz, kindle_seite)
 GET  /kindle/rezept?d=NAME&portionen=N  ein Rezept auf einem Bildschirm, mit Fehlendes auf die Liste und Gekocht
 GET  /kindle/gekocht?d=NAME  Gekocht fuer den Kindle (vorrat.kindle_gekocht)
@@ -22,6 +23,7 @@ POST /vorschau, /speichern, /heute, /loeschen, /vorlieben  (Antwort mit mehreren
 Seiten liefern (typ, daten) oder (typ, daten, 303, ziel) fuer Handler.antwort in dash.py.
 Unbekannte Pfade und Rezepte heben FileNotFoundError (-> 404).
 """
+import functools
 import html
 import io
 import os
@@ -340,6 +342,32 @@ function melden(ok) {
 ZURUECK = '<p><a class="zurueck" href="/rezepte">Alle Rezepte</a></p>'
 
 
+# Symbol: Kochtopf in Papierfarbe auf Akzentfarbe (Werte aus stil.css, --color-accent und --color-paper)
+AKZENT, PAPIER = "#1d3172", "#f4f0e6"
+SYMBOL_SVG = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="{AKZENT}"/>
+<g fill="{PAPIER}"><rect x="28" y="15" width="8" height="5" rx="2"/><rect x="11" y="21" width="42" height="6" rx="3"/>
+<path d="M15 30H49V40A11 11 0 0 1 38 51H26A11 11 0 0 1 15 40Z"/><rect x="8" y="32" width="7" height="4" rx="2"/>
+<rect x="49" y="32" width="7" height="4" rx="2"/></g></svg>""".encode()
+
+
+@functools.lru_cache(maxsize=1)
+def symbol_png(px=180):
+    """Dasselbe Symbol als PNG fuer den Home-Bildschirm (iOS rundet die Ecken selbst, deshalb ohne Rundung)."""
+    from PIL import Image, ImageDraw
+    s = px / 64
+    img = Image.new("RGB", (px, px), AKZENT)
+    d = ImageDraw.Draw(img)
+
+    def rund(x, y, b, h, r):
+        d.rounded_rectangle([x * s, y * s, (x + b) * s, (y + h) * s], radius=r * s, fill=PAPIER)
+    rund(28, 15, 8, 5, 2); rund(11, 21, 42, 6, 3); rund(8, 32, 7, 4, 2); rund(49, 32, 7, 4, 2)
+    rund(15, 30, 34, 21, 11)
+    d.rectangle([15 * s, 30 * s, 49 * s, 40 * s], fill=PAPIER)  # Topf oben eckig, nur unten rund
+    out = io.BytesIO()
+    img.save(out, "PNG")
+    return out.getvalue()
+
+
 def seite(titel, inhalt, oben="/rezepte"):
     """Ganze Seite mit der Leiste unten; oben ist der Reiter, der hervorgehoben wird. oben=None: ohne Leiste."""
     aktuell = ' aria-current="page"'
@@ -347,7 +375,8 @@ def seite(titel, inhalt, oben="/rezepte"):
                      for weg, name in (("/", "Start"), ("/rezepte", "Rezepte"), ("/vorrat", "Vorrat"), ("/einkauf", "Einkauf"), ("/kochen", "Kochen")))
     return "text/html; charset=utf-8", f"""<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{e(titel)}</title><style>{STIL}</style></head><body><main class="seite">
+<title>{e(titel)}</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><style>{STIL}</style></head><body><main class="seite">
 {inhalt}
 </main>{f'<nav class="unten" aria-label="Hauptmenü">{leiste}</nav>' if oben else ""}</body></html>""".encode()
 
@@ -927,6 +956,10 @@ def get(weg, q):
         return vorschau(text(d), d)
     if weg == "/rezeptbuch.epub":
         return "application/epub+zip", epub()
+    if weg == "/favicon.svg":
+        return "image/svg+xml", SYMBOL_SVG
+    if weg == "/apple-touch-icon.png":
+        return "image/png", symbol_png()
     if weg == "/kindle":
         return kindle_liste()
     if weg == "/kindle/rezept":
